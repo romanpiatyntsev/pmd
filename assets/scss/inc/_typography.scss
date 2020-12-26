@@ -1,0 +1,83 @@
+html {
+  font-size: 1px;
+}
+body {
+  position: relative;
+  font-size: 17rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  color: color(text);
+
+  @media (min-width: bp(lg) ) {
+    font-size: 16rem;
+  }
+}
+
+h1, h2, h3, h4, h5 {
+  color: color(text);
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-weight: 700;
+  width: 100%;
+  margin: 1em 0;
+}
+
+h1 {
+  font-size: 33rem;
+
+  @media (min-width: bp(sm) ) {
+    font-size: 40rem;
+  }
+
+  @media (min-width: bp(md) ) {
+    font-size: 50rem;
+  }
+
+  @media (min-width: bp(lg) ) {
+    font-size: 60rem;
+  }
+
+  @media (min-width: bp(xl) ) {
+    font-size: 70rem;
+  }
+}
+
+h2 {
+  font-size: 28rem;
+
+  @media (min-width: bp(sm) ) {
+    font-size: 35rem;
+  }
+
+  @media (min-width: bp(md) ) {
+    font-size: 40rem;
+  }
+
+  @media (min-width: bp(lg) ) {
+    font-size: 45rem;
+  }
+
+  @media (min-width: bp(xl) ) {
+    font-size: 50rem;
+  }
+}
+
+h3 {
+  font-size: 25rem;
+}
+
+h4 {
+  font-size: 20rem;
+}
+
+p, ul, li {
+  line-height: 1.4;
+}
+
+p {
+  margin: 0;
+  padding: 0 0 1em;
+}
+
+b, strong {
+  font-weight: bold;
+}

@@ -1,0 +1,47 @@
+//blue
+$base-color: #196d9e;
+$secondary-color: #1c9a7c;
+
+//light-green
+//$base-color: #1c9a7c;
+//$secondary-color: #196d9e;
+
+$colors: (
+        white: #fff,
+        black: #000,
+        gray: #808080,
+        lgray: #8c8c8c,
+        text: #434445,
+        light-overlay: rgba(255, 255, 246, 0.65),
+        prime-050: darken( $base-color, 20%),
+        prime-100: darken( $base-color, 15%),
+        prime-200: darken( $base-color, 10%),
+        prime-300: $base-color,
+        prime-400: lighten( $base-color, 5% ),
+        prime-500: lighten( $base-color, 10% ),
+        prime-600: lighten( $base-color, 15% ),
+        prime-700: lighten( $base-color, 20% ),
+        prime-800: lighten( $base-color, 25% ),
+        prime-900: lighten( $base-color, 35% ),
+        prime-1000: lighten( $base-color, 55% ),
+
+        s-050: darken( $secondary-color, 20%),
+        s-100: darken( $secondary-color, 15%),
+        s-200: darken( $secondary-color, 10%),
+        s-300: $secondary-color,
+        s-400: lighten( $secondary-color, 5% ),
+        s-500: lighten( $secondary-color, 10% ),
+        s-600: lighten( $secondary-color, 15% ),
+        s-700: lighten( $secondary-color, 20% ),
+        s-800: lighten( $secondary-color, 25% ),
+        s-900: lighten( $secondary-color, 35% ),
+        s-1000: lighten( $secondary-color, 55% )
+);
+
+
+//lighten( $base-color, 10% )
+//prime-200: #04504f,
+//prime-300: #029d9b,
+//prime-400: #09aba9,
+//prime-500: #0cb8b6,
+//prime-600: #0dd4d2

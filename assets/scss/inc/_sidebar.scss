@@ -1,0 +1,49 @@
+.sidebar-wrapper {
+  background: #f5f5f5;
+  padding-top: 2em;
+
+  @media (min-width: bp(sm) ) {
+    background: color(white);
+  }
+
+  @media (min-width: bp(md) ) {
+    padding-top: 0;
+  }
+
+  @media (min-width: bp(lg) ) {
+    padding-left: 60px;
+  }
+
+  .widget {
+    margin-bottom: 40px;
+  }
+
+  .widget-title {
+    margin-top: 0 !important;
+  }
+
+  ul {
+    list-style: none;
+    li {
+      margin-bottom: 30px;
+      position: relative;
+      padding-left: 13px;
+
+      &:before {
+        position: absolute;
+        top: 8px;
+        left: 0;
+        content: '';
+        width: 4px;
+        height: 4px;
+        background: color(s-500);
+      }
+    }
+  }
+}
+
+.search-no-results {
+  .widget_search {
+    display: none;
+  }
+}

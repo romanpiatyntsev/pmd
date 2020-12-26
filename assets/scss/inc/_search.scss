@@ -1,0 +1,63 @@
+.search {
+
+  $title: 'h1, h2, h3, h4, h5';
+
+  #{$title} {
+    margin: 1.3em 0 1em 0 !important;
+  }
+
+  .entry-title {
+    font-size: 30rem;
+  }
+
+  .entry-meta {
+    //margin-bottom: 0;
+    margin: 3em 0 0 0;
+  }
+
+  .pagination {
+    margin-top: 1.3em;
+  }
+}
+
+.searchform {
+  position: relative;
+
+  #searchsubmit {
+    position: absolute;
+    display: inline-block;
+    margin: 0;
+    width: 36px;
+    height: 46px;
+    padding: 0;
+    background: none;
+    outline: 0;
+    right: 2px;
+    border: none;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-family: FontAwesome;
+    border-radius: 0 15px 15px 0;
+    color: color(s-400);
+    transition: color 0.3s;
+
+    &:hover {
+      color: color(s-600);
+      transition: color 0.3s;
+    }
+  }
+
+  input[type='text'] {
+    height: 50px;
+    width: 100%;
+    border: 2px solid color(s-500);
+    outline: 0;
+    padding: 10px 40px 10px 10px;
+    border-radius: 15px;
+    box-sizing: border-box;
+    display: inline-block;
+    line-height: 0;
+  }
+}
+

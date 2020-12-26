@@ -1,0 +1,113 @@
+.button {
+  cursor: pointer;
+  position: relative;
+  padding: 10px;
+  background: color(white);
+  color: color(text);
+  display: inline-block;
+  text-align: center;
+  border: none;
+
+  &:hover {
+    border: none;
+  }
+}
+
+.button-radius {
+  border-radius: 10px;
+}
+
+.button-big {
+  padding: 25px;
+  text-transform: uppercase;
+}
+
+.button-secondary {
+  background: color(s-400);
+  color: color(white)!important;
+  transition: background 0.3s ease-out;
+
+  &:hover {
+    background: color(s-300);
+    transition: background 0.3s ease-out;
+  }
+}
+
+.button-primary {
+  background: color(prime-600);
+  color: color(white) !important;
+  transition: background 0.3s ease-out;
+
+  &:hover {
+    background: color(prime-400);
+    transition: background 0.3s ease-out;
+  }
+}
+
+.button-icon {
+  padding-left: 3.5em;
+
+  &:before {
+    position: absolute;
+    font-family: FontAwesome;
+    content: attr(data-icon);
+    top: 50%;
+    left: 0.75em;
+    font-size: 25rem;
+    transform: translateY(-50%);
+  }
+}
+
+/* CONTACT FORM SETTING */
+.wpcf7-form {
+  padding: 30px 0 0 0;
+
+  label {
+    font-size: 14rem;
+  }
+}
+
+.wpcf7-form-control-wrap {
+  display: block;
+  margin: 0 0 25px 0;
+}
+
+.wpcf7-text,
+.wpcf7-textarea
+{
+  border: 1px solid color(s-500);
+  padding: 10px;
+  border-radius: 8px;
+  outline: none;
+  width: 100%;
+
+  &:focus {
+    box-shadow: 0px 0px 9px -1px rgba(117,117,117,0.76);
+  }
+}
+
+div.wpcf7-validation-errors,
+div.wpcf7-acceptance-missing {
+  border: 2px solid #fb6e6e;
+  background: #f38080;
+  color: white;
+}
+
+div.wpcf7-response-output {
+  margin: 1em 0 1em;
+}
+
+.wpcf7-submit {
+  display: block;
+  border: none;
+  padding: 15px;
+  border-radius: 10px;
+  background: color(s-500);
+  color: color(white);
+  cursor: pointer;
+  outline: none;
+
+  &:hover {
+    background: color(s-400);
+  }
+}

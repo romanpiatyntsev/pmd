@@ -1,0 +1,33 @@
+//$grid-breakpoints: (
+//        xs: 0,
+//        sm: 576px,
+//        md: 768px,
+//        lg: 992px,
+//        xl: 1200px
+//) !default;
+
+$spacer: 16rem;
+@import "../../node_modules/node-normalize-scss/normalize";
+@import "inc/grid";
+/*!
+ * PMD main style, created by Coderator boke@ukr.net
+ */
+@import "inc/functions";
+@import "inc/color";
+@import "inc/ui";
+@import "inc/typography";
+@import "inc/base";
+@import "inc/header";
+@import "inc/menu";
+@import "inc/sidebar";
+@import "inc/home";
+@import "inc/post";
+@import "inc/map";
+@import "inc/footer";
+@import "inc/pagination";
+@import "inc/zaklad";
+@import "inc/search";
+@import "inc/slider";
+
+
+

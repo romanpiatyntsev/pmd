@@ -1,0 +1,29 @@
+.pagination {
+  text-align: center;
+
+  .page-numbers {
+    display: inline-block;
+    border: none;
+    margin-right: 5px;
+    line-height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    transition: background 0.3s ease;
+
+    &:hover {
+      background: color(prime-1000);
+      transition: background 0.3s ease;
+    }
+
+    &.current {
+      background: color(s-400);
+      color: color(white);
+    }
+
+    &.dots {
+      &:hover {
+        background: none;
+      }
+    }
+  }
+}

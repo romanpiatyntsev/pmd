@@ -1,0 +1,243 @@
+.single-zaklad {
+
+  .post-thumbnail {
+    margin-bottom: 35px;
+
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 7px;
+    }
+  }
+
+  .post-content {
+    line-height: 1.6;
+
+    p {
+      line-height: 1.6;
+    }
+  }
+
+  #map {
+    height: 350px;
+    width: 100%;
+  }
+
+  .doctors-list {
+
+    .doctor {
+      margin-bottom: 15px;
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+
+      .name {
+        font-weight: bold;
+        font-size: 21rem;
+        margin: 12px 0;
+      }
+
+      .personal-info {
+        list-style: none;
+        .personal-info-item {
+          font-size: 14rem;
+          margin-bottom: 8px;
+        }
+      }
+    }
+  }
+
+  .working-days {
+    margin-bottom: 30px;
+
+    .inner {
+
+      .schedule {
+        color: color(white);
+        background: color(s-400);
+        border-radius: 7px;
+        padding: 25px;
+
+        .header {
+
+        }
+
+        .schedule-header {
+          color: color(white);
+          margin-top: 5px;
+          font-size: 28rem;
+        }
+
+        .table {
+          .day {
+            display: flex;
+            font-size: 19rem;
+            padding-bottom: 15px;
+            margin-top: 15px;
+            border-bottom: 1px solid #fff;
+            .name {
+              width: 100%;
+            }
+            .time {
+              width: 100%;
+              text-align: right;
+            }
+            &:last-child {
+              border: unset;
+            }
+          }
+        }
+      }
+      .info-box {
+        position: relative;
+        color: color(white);
+        border-radius: 7px;
+        margin-top: 30px;
+        padding: 30px 20px 30px 40px;
+
+        background-color: color(prime-500);
+        background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ffffff' fill-opacity='0.32' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
+
+        &:before {
+          position: absolute;
+          left: 20px;
+          top: 50%;
+          transform: translateY(-50%);
+          content: attr(data-icon);
+          font-family: FontAwesome;
+          font-size: 35rem;
+          opacity: 0.7;
+        }
+
+        a {
+          border: none;
+        }
+
+        .info-text {
+          color: color(white);
+          text-align: center;
+          display: inline-block;
+          width: 100%;
+
+          &.tel {
+            line-height: 1;
+            font-size: 35rem;
+            font-family: PT Sans Narrow;
+            font-weight: 700;
+            border: none;
+          }
+
+          &.email {
+            line-height: 1;
+            font-size: 19rem;
+            font-family: PT Sans Narrow;
+            border: none;
+
+            @media (min-width: bp(md) ) {
+              font-size: 21rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.archive-zaklad{
+
+  .block-item {
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 0;
+
+    &:hover {
+
+      .title {
+        color: color(prime-500);
+        transition: color 0.3s;
+      }
+
+      .post-thumbnail {
+        img {
+          transform: scale(1.1);
+          transition: 0.3s;
+        }
+      }
+    }
+
+    @media (min-width: bp(lg) ) {
+      flex-direction: row;
+    }
+
+    .post-thumbnail {
+      text-align: center;
+      margin-bottom: 15px;
+      padding: 0;
+      overflow: hidden;
+
+      @media (min-width: bp(lg) ) {
+        margin-right: 15px;
+        margin-bottom: 0;
+      }
+
+      img {
+        transition: 0.3s;
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    .info {
+
+      .title {
+        font-size: 30rem;
+        margin: 0 0 10px 0;
+        transition: color 0.3s;
+      }
+
+      .info-row {
+        display: flex;
+        color: #8a8a8a;
+
+        .icon {
+          padding-right: 10px;
+          min-width: 25px;
+
+          &:before {
+            content: attr(data-icon);
+            color: color(prime-800);
+            font-family: FontAwesome;
+          }
+        }
+
+        .description {
+          width: 100%;
+          padding-bottom: 5px;
+          font-size: 16rem;
+        }
+
+      }
+    }
+  }
+}
+
+.admin {
+  img {
+    width: 100%;
+    height: auto;
+  }
+  .name {
+    margin: 10px 0 15px 0;
+    @media (min-width: bp(lg) ) {
+      margin: 0 0 15px 0;
+    }
+
+  }
+  .posada {
+    font-weight: 700;
+    color: color(prime-400)
+  }
+}
